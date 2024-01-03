@@ -118,6 +118,7 @@ def cluster_and_label(data, create_and_show_plot=True):
 
 if __name__ == "__main__":
     import os
+    logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
     # If data present, read it in
     file_path = 'taxi-rides.csv'
     if os.path.exists(file_path):

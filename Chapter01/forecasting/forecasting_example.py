@@ -109,7 +109,7 @@ def plot_forecast(df_train: pd.DataFrame, df_test: pd.DataFrame, predicted: pd.D
 
 if __name__ == "__main__":
     import os
-    
+    logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
     # If data present, read it in, otherwise, download it 
     file_path = './train.csv'
     if os.path.exists(file_path):
@@ -140,7 +140,6 @@ if __name__ == "__main__":
     
     # Plot the forecast
     plot_forecast(df_train, df_test, predicted)
-        
     
 
 
