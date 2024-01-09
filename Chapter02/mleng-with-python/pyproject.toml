@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mleng-with-python"
+version = "0.1.0"
+description = ""
+authors = ["Pranav Krishnan <pranavk@berkeley.edu>"]
+readme = "README.md"
+packages = [{include = "mleng_with_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
